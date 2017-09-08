@@ -25,7 +25,7 @@ RUN pip install awscli --upgrade
 # node and npm
 RUN wget -O /node-v6.11.3-linux-x64.tar.xz "https://nodejs.org/dist/v6.11.3/node-v6.11.3-linux-x64.tar.xz"
 RUN tar xf /node-v6.11.3-linux-x64.tar.xz
-RUN rm -rf /node-v6.11.3-linux-x64.tar.xz
 RUN mv /node-v6.11.3-linux-x64.tar.xz /node
+RUN rm -rf /node-v6.11.3-linux-x64.tar.xz
 RUN ln -s /node/bin/node /usr/bin/node
 RUN ln -s /node/bin/npm /usr/bin/npm
