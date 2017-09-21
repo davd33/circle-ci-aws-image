@@ -4,6 +4,8 @@ RUN apt-get -y -qq update
 
 # xz-utils
 RUN apt-get -y -qq install xz-utils
+# zip
+RUN apt-get -y -qq install zip
 # git
 RUN apt-get -y -qq install git
 # python3
